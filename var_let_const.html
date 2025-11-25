@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var fname="kanchan";//global scope
+            var fname="sumit"; //reassign
+            fname="samartha"; //re-declare
+            document.write(fname);
+            
+
+            letlname="kanchan";//functional or block scope
+            //let lname="lande";//ewsign not allowed
+            lname="lande"; //redeclare
+            document.write(fname);
+
+
+
+        </script>
+        <script>
+
+            function example(){
+                var x = 1;
+                let y = 2;
+                const z= 3;
+                if(true){
+                    var x= 10;
+                    let y = 20;
+                    const z=30;
+                    document.write("x :" + x +"<br>");
+                       document.write("y :" + y +"<br>");
+                          document.write("z :" + z +"<br><br>");
+                }
+                document.write("x :" + x +"<br>");
+                document.write("y :" + y +"<br>");
+                document.write("z :" + z +"<br><br>");
+                }
+                example();
+
+            
+
+            
+        </script>
+        </body>
+        </html>
