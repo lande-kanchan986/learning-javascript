@@ -5,30 +5,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arithmetic Operation</title>
+
 </head>
+
 <body>
     <script>
         //modify or updates and delete
-        var a=["Kanchan",20,"Femail","Software Engineer"];
-        document.write(a+ "<br>");
-        a[1]=28;
+        var a = ["Kanchan", 20, "Femail", "Software Engineer"];
+        document.write(a + "<br>");
+        a[1] = 28;
         document.write(a + "<br>");
         delete a[3];
         document.write(a + "<br>");
     </script>
     <script>
         //sorting and reverse
-        var a= ["Tanuja","sudesh","Kanchan","Sumit","Rohit","Sona"];
-        document.write( a+ "<br>");
+        var a = ["Tanuja", "sudesh", "Kanchan", "Sumit", "Rohit", "Sona"];
+        document.write(a + "<br>");
         a.sort();
-        document.write(a +"<br>");
+        document.write(a + "<br>");
         a.reverse();
         document.write(a + "<br>");
     </script>
     <script>
         //pop and push
         document.write("<h2>push pop Example</h2>");
-        var a= ["Tanuja","sudesh","Kanchan","Sumit","Rohit","Sona"];
+        var a = ["Tanuja", "sudesh", "Kanchan", "Sumit", "Rohit", "Sona"];
         document.write(a + "<br>");
         a.pop();
         a.pop();
@@ -40,7 +42,7 @@
     </script>
     <script>
         document.write("<h2>Shift pop Unshift</h2>");
-        var a= ["Tanuja","sudesh","Kanchan","Sumit","Rohit","Sona"];
+        var a = ["Tanuja", "sudesh", "Kanchan", "Sumit", "Rohit", "Sona"];
         document.write(a + "<br>");
         a.shift();
         a.shift();
@@ -51,24 +53,43 @@
     </script>
     <script>
         document.write("<h2>Shift pop Unshift</h2>");
-        var a= ["Tanuja","sudesh","Kanchan","Sumit","Rohit","Sona"];
-         var b=["Sudesh","vaishu","Kanchu","Sumit","Rohit","Sona"];
-         var c = a.concat(b);
-         document.write(c + "<br>");
-         var d =c.join("/");
-         document.write(d + "<br>");
+        var a = ["Tanuja", "sudesh", "Kanchan", "Sumit", "Rohit", "Sona"];
+        var b = ["Sudesh", "vaishu", "Kanchu", "Sumit", "Rohit", "Sona"];
+        var c = a.concat(b);
+        document.write(c + "<br>");
+        var d = c.join("/");
+        document.write(d + "<br>");
     </script>
     <script>
         document.write("<h2>Contact and Join</h2>");
-        var a= ["Tanuja","sudesh","Kanchan","Sumit","Rohit","Sona"];
-         var b=["Sudesh","vaishu","Kanchu","Sumit","Rohit","Sona"];
-         var x =["Lekhit","Kanchan"];
+        var a = ["Tanuja", "sudesh", "Kanchan", "Sumit", "Rohit", "Sona"];
+        var b = ["Sudesh", "vaishu", "Kanchu", "Sumit", "Rohit", "Sona"];
+        var x = ["Lekhit", "Kanchan"];
 
-         var c = a.concat(b,x);
-         document.write(c + "<br>");
-         var d =c.join("/");
-         document.write(d + "<br>");
+        var c = a.concat(b, x);
+        document.write(c + "<br>");
+        var d = c.join("/");
+        document.write(d + "<br>");
 
     </script>
-    </body>
+    <script>
+        document.write("<h2>slice Example</h2>")
+        var a = ["Tanuja", "sudesh", "Kanchan", "Sumit", "Rohit", "Sona"];
+        document.write(a + "<br>")
+
+        //slice(start,end)
+        var b = a.slice(2, 5);
+        document.write(b + "<br>")
+    </script>
+    <script>
+        document.write("<h2>Splice Example</h2>")
+        var a = ["Tanuja", "sudesh", "Kanchan", "Sumit", "Rohit", "Sona"];
+        document.write(a + "<br>")
+
+        //splice (index,how many delete,"newvalue")
+        a.splice(2,0, "Arbaj", "Anand","Sumit");
+        document.write(a + "<br>")
+    </script>
+</body>
+
 </html>
