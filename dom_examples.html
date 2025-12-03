@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- example1 -->
+    <h1>Change Tech Using Dom</h1>
+    <h2 id="title"> Old Heading</h2>
+    <button onclick="changeText()">Change Text></button>
+    <hr>
+    <!-- example2 -->
+    <h1>Change style color using Dom</h1>
+    <h2 id="msg">Hello its Kanchan</h2>
+    <button onclick="changeColor()"> Change color</button>
+    <!-- example3-->
+    <h1>Change Imager using Dom</h1>
+    <img src="images/bionature.jpeg" id="myImg" width="300" />
+    <button onclick="changeimage()"> Change Image</button>
+
+    <hr>
+    <!-- example4-->
+    <h1>Input form user</h1>
+    <input type="text" id="nameInput" placeholder="Enter Name" />
+    <button onclick="ShowName()"> Submit</button>
+
+    <h1 style="color:red;" id="output"></h1>
+        <hr>
+        <h1>Delete line</h1>
+        <p id="deleteMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga possimus ad dolore
+            recusandae et odit consequatur. Velit reprehenderit sint, ea animi, dicta, adipisci odio atque voluptatibus
+            numquam ut necessitatibus?</p>
+        <button onclick="removepara()">Remove</button>
+
+
+        <hr>
+       
+        <p id="para1">Change my font size</p>
+        <button onclick="increase()">+</button>
+        <button onclick="decrease()">-</button>
+        <hr>
+
+        <button onclick="toggleTheme()">Toggle Theme</button>
+        <h2>Welcome to pune</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sapiente, beatae aut explicabo maiores
+            dolorem at cumque cupiditate omnis, est laboriosam eos reprehenderit deleniti dolores amet maxime architecto
+            eius quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, sit quibusdam aut molestias ipsum dignissimos earum. Quidem accusamus excepturi perspiciatis, officiis esse perferendis voluptates accusantium deserunt, quos rerum, modi inventore.</p>
+        <style>
+            body {
+                background-color: white;
+                color:black;
+                transition: 0.5s;
+
+            }
+            .dark-mode{
+                background-color: black;
+                color:white;
+
+            }
+        </style>
+        <script>
+            function toggleTheme(){
+                document.body.classList.toggle("dark-mode");
+            }
+        </script>
+
+        </p>
+        <script>
+            let size = 16;
+
+            function insrease() {
+                size++;
+                document.getElementById('para1').style.fontSize = size + 'px';
+
+            }
+            
+            function decrease() {
+                size--;
+                document.getElementById('para1').style.fontSize = size + 'px';
+
+            }
+        </script>
+
+        <script>
+            function removepara() {
+                document.getElementById('deleteMe').remove();
+            }
+        </script>
+        <h1 style="color: red;" id="output"></h1>
+        <hr>
+
+        <script>
+            function ShowName() {
+                let name = document.getElementById('nameInput').value;
+                document.getElementById('output').innerHTML = 'Hello is me' + name;
+
+            }
+        </script>
+        </h3>
+
+        <hr>
+        <script>
+            function changeImage() {
+                document.getElementById('myImg'). src='images/construct1.JPEG';
+
+            }
+        </script>
+        <script>
+
+        </script>
+
+
+        <script>
+            function changeColor() {
+                document.getElementById('msg').style.color = 'blue';
+            }
+        </script>
+
+
+        <script>
+            function changeText() {
+                document.getElementById('title').innerHTML = 'New Heading';
+            }
+        </script>
+
+</body>
+
+</html>
